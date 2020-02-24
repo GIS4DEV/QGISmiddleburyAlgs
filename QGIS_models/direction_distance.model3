@@ -2,301 +2,214 @@
 <Option type="Map">
   <Option type="Map" name="children">
     <Option type="Map" name="native:centroids_1">
-      <Option value="true" type="bool" name="active"/>
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option value="native:centroids" type="QString" name="alg_id"/>
-      <Option value="Centroid" type="QString" name="component_description"/>
-      <Option value="135.36898580823822" type="double" name="component_pos_x"/>
-      <Option value="268.0474212530288" type="double" name="component_pos_y"/>
+      <Option type="QString" value="native:centroids" name="alg_id"/>
+      <Option type="QString" value="Centroids" name="component_description"/>
+      <Option type="double" value="305" name="component_pos_x"/>
+      <Option type="double" value="391" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option value="native:centroids_1" type="QString" name="id"/>
+      <Option type="QString" value="native:centroids_1" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
       <Option type="Map" name="params">
         <Option type="List" name="ALL_PARTS">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="false" type="bool" name="static_value"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="false" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="native:reprojectlayer_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option type="QString" value="cbd" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option type="Map" name="native:meancoordinates_1">
-      <Option value="true" type="bool" name="active"/>
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option value="native:meancoordinates" type="QString" name="alg_id"/>
-      <Option value="oneDestination" type="QString" name="component_description"/>
-      <Option value="138" type="double" name="component_pos_x"/>
-      <Option value="367" type="double" name="component_pos_y"/>
+      <Option type="QString" value="native:meancoordinates" name="alg_id"/>
+      <Option type="QString" value="Mean coordinate(s)" name="component_description"/>
+      <Option type="double" value="375" name="component_pos_x"/>
+      <Option type="double" value="501" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option value="native:meancoordinates_1" type="QString" name="id"/>
+      <Option type="QString" value="native:meancoordinates_1" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
       <Option type="Map" name="params">
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="native:centroids_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option type="QString" value="native:centroids_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
         <Option type="List" name="UID">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
+            <Option type="int" value="2" name="source"/>
             <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="WEIGHT">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
+            <Option type="int" value="2" name="source"/>
             <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:reprojectlayer_1">
-      <Option value="true" type="bool" name="active"/>
+    <Option type="Map" name="qgis:executesql_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option value="native:reprojectlayer" type="QString" name="alg_id"/>
-      <Option value="Reproject layer" type="QString" name="component_description"/>
-      <Option value="129" type="double" name="component_pos_x"/>
-      <Option value="177" type="double" name="component_pos_y"/>
+      <Option type="QString" value="qgis:executesql" name="alg_id"/>
+      <Option type="QString" value="Execute SQL" name="component_description"/>
+      <Option type="double" value="632" name="component_pos_x"/>
+      <Option type="double" value="369" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option value="native:reprojectlayer_1" type="QString" name="id"/>
-      <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
-          <Option type="Map">
-            <Option value="originfeature" type="QString" name="parameter_name"/>
-            <Option value="0" type="int" name="source"/>
-          </Option>
-        </Option>
-        <Option type="List" name="TARGET_CRS">
-          <Option type="Map">
-            <Option value=" layer_property( parameter('inputpoints') , 'crs')" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
-    <Option type="Map" name="qgis:fieldcalculator_1">
-      <Option value="true" type="bool" name="active"/>
-      <Option name="alg_config"/>
-      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
-      <Option value="Direction" type="QString" name="component_description"/>
-      <Option value="496.9224645205952" type="double" name="component_pos_x"/>
-      <Option value="271.214607130495" type="double" name="component_pos_y"/>
-      <Option type="StringList" name="dependencies">
-        <Option value="native:meancoordinates_1" type="QString"/>
-      </Option>
-      <Option value="qgis:fieldcalculator_1" type="QString" name="id"/>
-      <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="FIELD_LENGTH">
-          <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="10" type="int" name="static_value"/>
-          </Option>
-        </Option>
-        <Option type="List" name="FIELD_NAME">
-          <Option type="Map">
-            <Option value="concat( @fieldnameprefix , 'Dir')" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
-          </Option>
-        </Option>
-        <Option type="List" name="FIELD_PRECISION">
-          <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="2" type="int" name="static_value"/>
-          </Option>
-        </Option>
-        <Option type="List" name="FIELD_TYPE">
-          <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="0" type="int" name="static_value"/>
-          </Option>
-        </Option>
-        <Option type="List" name="FORMULA">
-          <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="degrees(azimuth(make_point(    @oneDestination_OUTPUT_maxx ,   @oneDestination_OUTPUT_maxy ),centroid($geometry) ))" type="QString" name="static_value"/>
-          </Option>
-        </Option>
-        <Option type="List" name="INPUT">
-          <Option type="Map">
-            <Option value="inputpoints" type="QString" name="parameter_name"/>
-            <Option value="0" type="int" name="source"/>
-          </Option>
-        </Option>
-        <Option type="List" name="NEW_FIELD">
-          <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="true" type="bool" name="static_value"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
-    <Option type="Map" name="qgis:fieldcalculator_2">
-      <Option value="true" type="bool" name="active"/>
-      <Option name="alg_config"/>
-      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
-      <Option value="Distance" type="QString" name="component_description"/>
-      <Option value="499" type="double" name="component_pos_x"/>
-      <Option value="366" type="double" name="component_pos_y"/>
-      <Option name="dependencies"/>
-      <Option value="qgis:fieldcalculator_2" type="QString" name="id"/>
+      <Option type="QString" value="qgis:executesql_1" name="id"/>
       <Option type="Map" name="outputs">
-        <Option type="Map" name="output">
-          <Option value="qgis:fieldcalculator_2" type="QString" name="child_id"/>
-          <Option value="output" type="QString" name="component_description"/>
-          <Option value="505" type="double" name="component_pos_x"/>
-          <Option value="443" type="double" name="component_pos_y"/>
+        <Option type="Map" name="Output">
+          <Option type="QString" value="qgis:executesql_1" name="child_id"/>
+          <Option type="QString" value="Output" name="component_description"/>
+          <Option type="double" value="832" name="component_pos_x"/>
+          <Option type="double" value="414" name="component_pos_y"/>
           <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="output" type="QString" name="name"/>
-          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Output" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
         </Option>
       </Option>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
       <Option type="Map" name="params">
-        <Option type="List" name="FIELD_LENGTH">
+        <Option type="List" name="INPUT_DATASOURCES">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="10" type="int" name="static_value"/>
+            <Option type="QString" value="inputfeatures" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+          <Option type="Map">
+            <Option type="QString" value="native:meancoordinates_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
-        <Option type="List" name="FIELD_NAME">
+        <Option type="List" name="INPUT_GEOMETRY_CRS">
           <Option type="Map">
-            <Option value="concat( @fieldnameprefix , 'Dist')" type="QString" name="expression"/>
-            <Option value="3" type="int" name="source"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option type="List" name="FIELD_PRECISION">
+        <Option type="List" name="INPUT_GEOMETRY_FIELD">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="3" type="int" name="static_value"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
           </Option>
         </Option>
-        <Option type="List" name="FIELD_TYPE">
+        <Option type="List" name="INPUT_GEOMETRY_TYPE">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="0" type="int" name="static_value"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option type="List" name="FORMULA">
+        <Option type="List" name="INPUT_QUERY">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="distance( centroid($geometry),  make_point(    @oneDestination_OUTPUT_maxx ,   @oneDestination_OUTPUT_maxy )  )" type="QString" name="static_value"/>
+            <Option type="QString" value="select *, &#xa;degrees(st_azimuth( (select st_transform(geometry,3395) from input2), st_transform(st_centroid(geometry),3395))) as [% @prefix %]Dir,&#xa;st_distance( st_transform(st_centroid(geometry),4326),  (select st_transform(geometry,4326) from input2), true) as  [% @prefix %]Dist&#xa;from input1" name="expression_text"/>
+            <Option type="int" value="4" name="source"/>
+          </Option>
+          <Option type="Map">
+            <Option type="QString" value="prefix" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT">
+        <Option type="List" name="INPUT_UID_FIELD">
           <Option type="Map">
-            <Option value="qgis:fieldcalculator_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
-          </Option>
-        </Option>
-        <Option type="List" name="NEW_FIELD">
-          <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="true" type="bool" name="static_value"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
   <Option type="Map" name="help">
-    <Option value="Joseph Holler" type="QString" name="ALG_CREATOR"/>
-    <Option value="Calculates the direction in degrees from input features to the destination feature, where North is 0 degrees, East is 90, South is 180, West is 270, and the maximum approaches 360.&#xa;&#xa;Calculates distance in the linear units of the input features' coordinate system from input features to the destination feature.&#xa;&#xa;Direction is calculated with the field calculator azimuth() function, and distance is calculated with the field calculator distance() function." type="QString" name="ALG_DESC"/>
-    <Option value="Joseph Holler" type="QString" name="ALG_HELP_CREATOR"/>
-    <Option value="1.0" type="QString" name="ALG_VERSION"/>
-    <Option value="" type="QString" name="HELP_URL"/>
-    <Option value="Calculate direction and distance from the origin feature to the input (destination) features." type="QString" name="SHORT_DESCRIPTION"/>
-    <Option value="Feature(s) to which direction (azimuth) and distance is to be calculated. Destination features are converted to a single desination point location. &#xa;The single destination point location defined as the mean coordinates of the centroids of the destination features." type="QString" name="destinationpoints"/>
-    <Option value="Enter a three letter prefix for the output field names.  E.g. if you enter cbd, the output field names will be cbdDist and cbdDir.&#xa;The new field names cannot duplicate existing field names." type="QString" name="fieldnameprefix"/>
-    <Option value="Destination features for which to calculate direction and distance from the origin feature. Line or polygon features are converted to their centroid points before calculating." type="QString" name="inputpoints"/>
-    <Option value="Single feature from which distance and direction is calculated. &#xa;A single origin feature point is found by projecting origin feature(s) to the same coordinate system as the Input Features, converting to centroid(s), and calculating mean coordinates." type="QString" name="originfeature"/>
-    <Option value="Output features will contain two new columns, Direction and Distance." type="QString" name="qgis:fieldcalculator_2:direction distance output"/>
-    <Option value="The output features are the input features with two new fields to store direction and distance." type="QString" name="qgis:fieldcalculator_2:output"/>
+    <Option type="QString" value="Joseph Holler, with insight from the Fall 2019 class of geography 323 at Middlebury College." name="ALG_CREATOR"/>
+    <Option type="QString" value="Calculates the distance and direction from an origin to a set of input features." name="ALG_DESC"/>
+    <Option type="QString" value="1.2" name="ALG_VERSION"/>
+    <Option type="QString" value="https://github.com/GIS4DEV/QGISmiddleburyAlgs" name="HELP_URL"/>
+    <Option type="QString" value="Calculates the distance and direction from an origin to a set of input features." name="SHORT_DESCRIPTION"/>
+    <Option type="QString" value="Feature(s) defining the origin from which distance and direction are calculated. The mean coordinates of the feature(s) centroid(s) are calculated as the origin." name="cbd"/>
+    <Option type="QString" value="Set of features for which to calculate the direction and distance from an origin. Distance and direction are considered from the feature centroids." name="inputfeatures"/>
+    <Option type="QString" value="Algorithm creates two new fields, one with suffix 'Dist' for Distance and one with suffix 'Dir' for Direction. Enter a prefix to use for the field names, such that you will not create duplicate fields in your output." name="prefix"/>
+    <Option type="QString" value="Output features will contain two new fields: distance in meters and direction in degrees from the origin." name="qgis:executesql_1:Output"/>
   </Option>
-  <Option value="Middlebury" type="QString" name="model_group"/>
-  <Option value="Direction and Distance" type="QString" name="model_name"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" value="Middlebury" name="model_group"/>
+  <Option type="QString" value="DistDirSQL" name="model_name"/>
   <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="fieldnameprefix">
-      <Option value="cbd" type="QString" name="default"/>
-      <Option value="Field Name Prefix" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option name="metadata"/>
-      <Option value="false" type="bool" name="multiline"/>
-      <Option value="fieldnameprefix" type="QString" name="name"/>
-      <Option value="string" type="QString" name="parameter_type"/>
-    </Option>
-    <Option type="Map" name="inputpoints">
+    <Option type="Map" name="cbd">
       <Option type="List" name="data_types">
-        <Option value="-1" type="int"/>
+        <Option type="int" value="-1"/>
       </Option>
       <Option type="invalid" name="default"/>
-      <Option value="Input Features" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
+      <Option type="QString" value="Origin" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option value="inputpoints" type="QString" name="name"/>
-      <Option value="source" type="QString" name="parameter_type"/>
+      <Option type="QString" value="cbd" name="name"/>
+      <Option type="QString" value="source" name="parameter_type"/>
     </Option>
-    <Option type="Map" name="originfeature">
+    <Option type="Map" name="inputfeatures">
       <Option type="List" name="data_types">
-        <Option value="-1" type="int"/>
+        <Option type="int" value="-1"/>
       </Option>
       <Option type="invalid" name="default"/>
-      <Option value="Origin Feature" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
+      <Option type="QString" value="Input Features" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option value="originfeature" type="QString" name="name"/>
-      <Option value="source" type="QString" name="parameter_type"/>
+      <Option type="QString" value="inputfeatures" name="name"/>
+      <Option type="QString" value="source" name="parameter_type"/>
     </Option>
-    <Option type="Map" name="qgis:fieldcalculator_2:output">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
-      <Option type="invalid" name="default"/>
-      <Option value="output" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
+    <Option type="Map" name="prefix">
+      <Option type="QString" value="cbd" name="default"/>
+      <Option type="QString" value="Prefix" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option value="qgis:fieldcalculator_2:output" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+      <Option type="bool" value="false" name="multiline"/>
+      <Option type="QString" value="prefix" name="name"/>
+      <Option type="QString" value="string" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="qgis:executesql_1:Output">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Output" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="qgis:executesql_1:Output" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
     </Option>
   </Option>
   <Option type="Map" name="parameters">
-    <Option type="Map" name="fieldnameprefix">
-      <Option value="fieldnameprefix" type="QString" name="component_description"/>
-      <Option value="137" type="double" name="component_pos_x"/>
-      <Option value="449" type="double" name="component_pos_y"/>
-      <Option value="fieldnameprefix" type="QString" name="name"/>
+    <Option type="Map" name="cbd">
+      <Option type="QString" value="cbd" name="component_description"/>
+      <Option type="double" value="208" name="component_pos_x"/>
+      <Option type="double" value="267" name="component_pos_y"/>
+      <Option type="QString" value="cbd" name="name"/>
     </Option>
-    <Option type="Map" name="inputpoints">
-      <Option value="inputpoints" type="QString" name="component_description"/>
-      <Option value="465.0429214260989" type="double" name="component_pos_x"/>
-      <Option value="107" type="double" name="component_pos_y"/>
-      <Option value="inputpoints" type="QString" name="name"/>
+    <Option type="Map" name="inputfeatures">
+      <Option type="QString" value="inputfeatures" name="component_description"/>
+      <Option type="double" value="214" name="component_pos_x"/>
+      <Option type="double" value="161" name="component_pos_y"/>
+      <Option type="QString" value="inputfeatures" name="name"/>
     </Option>
-    <Option type="Map" name="originfeature">
-      <Option value="originfeature" type="QString" name="component_description"/>
-      <Option value="129" type="double" name="component_pos_x"/>
-      <Option value="112" type="double" name="component_pos_y"/>
-      <Option value="originfeature" type="QString" name="name"/>
+    <Option type="Map" name="prefix">
+      <Option type="QString" value="prefix" name="component_description"/>
+      <Option type="double" value="231" name="component_pos_x"/>
+      <Option type="double" value="61" name="component_pos_y"/>
+      <Option type="QString" value="prefix" name="name"/>
     </Option>
   </Option>
 </Option>
