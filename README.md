@@ -6,6 +6,8 @@ These were developed quickly in the QGIS graphic modeler. Future plans are to pr
 The DirectionDistance algorithm calculates direction (in degrees) and distance (in the CRS linear units) from a point feature to features in the input layer, and appends these as attributes to the input layer.
 
 The GroupByDissolve algorithm uses SQL to group and dissolve features. It's benefits over other QGIS dissovle algorithms are:
-  1. Applies SpatiaLite makevalid() function to repair geometries
+  1. Applies SpatiaLite `makevalid()` function to repair geometries
   2. Can group by more than one attribute
   3. Can calculate multiple aggregate functions for multiple numeric attributes
+
+Unfortunately this level of SQL is not available on the MacOS version of GDAL installed with QGIS. Therefore, models with the `_macos` names are available without the `makevalid()` and `azimuth()` spatialite functions.
