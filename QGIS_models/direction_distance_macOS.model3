@@ -1,0 +1,537 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:addautoincrementalfield_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:addautoincrementalfield" name="alg_id" type="QString"/>
+      <Option value="Add autoincremental field" name="component_description" type="QString"/>
+      <Option value="889" name="component_pos_x" type="double"/>
+      <Option value="486" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:addautoincrementalfield_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="cbdAUTO" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GROUP_FIELDS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="qgis:executesql_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SORT_ASCENDING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="SORT_EXPRESSION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="SORT_NULLS_FIRST" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="START" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:centroids_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:centroids" name="alg_id" type="QString"/>
+      <Option value="Centroids" name="component_description" type="QString"/>
+      <Option value="305" name="component_pos_x" type="double"/>
+      <Option value="391" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:centroids_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ALL_PARTS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="origin" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:joinattributestable_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:joinattributestable" name="alg_id" type="QString"/>
+      <Option value="Join attributes by field value" name="component_description" type="QString"/>
+      <Option value="1228" name="component_pos_x" type="double"/>
+      <Option value="319" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:joinattributestable_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DISCARD_NONMATCHING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="cbdAUTO" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELDS_TO_COPY" type="List">
+          <Option type="Map">
+            <Option value="native:stringconcatenation_1" name="child_id" type="QString"/>
+            <Option value="CONCATENATION" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_2" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="cbdAUTO" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:addautoincrementalfield_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_2" type="List">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PREFIX" type="List">
+          <Option type="Map">
+            <Option value="" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:meancoordinates_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:meancoordinates" name="alg_id" type="QString"/>
+      <Option value="Mean coordinate(s)" name="component_description" type="QString"/>
+      <Option value="375" name="component_pos_x" type="double"/>
+      <Option value="501" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:meancoordinates_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:centroids_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="UID" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="WEIGHT" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:reprojectlayer_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:reprojectlayer" name="alg_id" type="QString"/>
+      <Option value="Reproject Origin" name="component_description" type="QString"/>
+      <Option value="669" name="component_pos_x" type="double"/>
+      <Option value="597" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:reprojectlayer_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:meancoordinates_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <wkt>PROJCRS["WGS 84 / World Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["World Mercator",METHOD["Mercator (variant A)",ID["EPSG",9804]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",1,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - between 80°S and 84°N"],BBOX[-80,-180,84,180]],ID["EPSG",3395]]</wkt>
+                <proj4>+proj=merc +lon_0=0 +k=1 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs</proj4>
+                <srsid>1353</srsid>
+                <srid>3395</srid>
+                <authid>EPSG:3395</authid>
+                <description>WGS 84 / World Mercator</description>
+                <projectionacronym>merc</projectionacronym>
+                <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:reprojectlayer_2" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:reprojectlayer" name="alg_id" type="QString"/>
+      <Option value="Reproject layer" name="component_description" type="QString"/>
+      <Option value="946" name="component_pos_x" type="double"/>
+      <Option value="338" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:reprojectlayer_2" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:addautoincrementalfield_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <wkt>PROJCRS["WGS 84 / World Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["World Mercator",METHOD["Mercator (variant A)",ID["EPSG",9804]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",1,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - between 80°S and 84°N"],BBOX[-80,-180,84,180]],ID["EPSG",3395]]</wkt>
+                <proj4>+proj=merc +lon_0=0 +k=1 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs</proj4>
+                <srsid>1353</srsid>
+                <srid>3395</srid>
+                <authid>EPSG:3395</authid>
+                <description>WGS 84 / World Mercator</description>
+                <projectionacronym>merc</projectionacronym>
+                <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:stringconcatenation_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:stringconcatenation" name="alg_id" type="QString"/>
+      <Option value="directionField" name="component_description" type="QString"/>
+      <Option value="546" name="component_pos_x" type="double"/>
+      <Option value="137" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:stringconcatenation_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_1" type="List">
+          <Option type="Map">
+            <Option value="prefix" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_2" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="Dir" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:deletecolumn_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:deletecolumn" name="alg_id" type="QString"/>
+      <Option value="Drop field(s)" name="component_description" type="QString"/>
+      <Option value="1137" name="component_pos_x" type="double"/>
+      <Option value="578" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:deletecolumn_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output" type="Map">
+          <Option value="qgis:deletecolumn_1" name="child_id" type="QString"/>
+          <Option value="Output" name="component_description" type="QString"/>
+          <Option value="1337" name="component_pos_x" type="double"/>
+          <Option value="623" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Output" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COLUMN" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="cbdAUTO" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:joinattributestable_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:executesql_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:executesql" name="alg_id" type="QString"/>
+      <Option value="Execute SQL" name="component_description" type="QString"/>
+      <Option value="644" name="component_pos_x" type="double"/>
+      <Option value="288" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:executesql_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_DATASOURCES" type="List">
+          <Option type="Map">
+            <Option value="inputlayer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="native:meancoordinates_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_FIELD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_QUERY" type="List">
+          <Option type="Map">
+            <Option value="select *, &#xa;st_distance( st_transform(st_centroid(geometry),4326),  (select st_transform(geometry,4326) from input2), true) as  [% @prefix %]Dist&#xa;from input1" name="expression_text" type="QString"/>
+            <Option value="4" name="source" type="int"/>
+          </Option>
+          <Option type="Map">
+            <Option value="prefix" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_UID_FIELD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:fieldcalculator_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" name="alg_id" type="QString"/>
+      <Option value="Field calculator" name="component_description" type="QString"/>
+      <Option value="888" name="component_pos_x" type="double"/>
+      <Option value="111" name="component_pos_y" type="double"/>
+      <Option name="dependencies" type="StringList">
+        <Option value="native:reprojectlayer_1" type="QString"/>
+      </Option>
+      <Option value="qgis:fieldcalculator_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="10" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option value="native:stringconcatenation_1" name="child_id" type="QString"/>
+            <Option value="CONCATENATION" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="6" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="degrees(&#xd;&#xa; azimuth(  &#xd;&#xa;  make_point(   @Reproject_Origin_OUTPUT_maxx , &#xd;&#xa; @Reproject_Origin_OUTPUT_maxy  ),&#xd;&#xa;centroid($geometry)))&#xd;&#xa;&#xd;&#xa; &#xd;&#xa; " name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:reprojectlayer_2" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NEW_FIELD" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="true" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help" type="Map">
+    <Option value="Joseph Holler, with insight from the Fall 2019 class of geography 323 at Middlebury College." name="ALG_CREATOR" type="QString"/>
+    <Option value="Calculates the distance and direction from an origin to a set of input features." name="ALG_DESC" type="QString"/>
+    <Option value="Joseph Holler" name="ALG_HELP_CREATOR" type="QString"/>
+    <Option value="1.3" name="ALG_VERSION" type="QString"/>
+    <Option value="https://github.com/GIS4DEV/QGISmiddleburyAlgs" name="HELP_URL" type="QString"/>
+    <Option value="Calculates the distance and direction from an origin to a set of input features." name="SHORT_DESCRIPTION" type="QString"/>
+    <Option value="Feature(s) defining the origin from which distance and direction are calculated. The mean coordinates of the feature(s) centroid(s) are calculated as the origin." name="cbd" type="QString"/>
+    <Option value="Set of features for which to calculate the direction and distance from an origin. Distance and direction are considered from the feature centroids." name="inputfeatures" type="QString"/>
+    <Option value="Layer of features for which to calculate the direction and distance from the CBD" name="inputlayer" type="QString"/>
+    <Option value="Algorithm creates two new fields, one with suffix 'Dist' for Distance and one with suffix 'Dir' for Direction. Enter a prefix to use for the field names, such that you will not create duplicate fields in your output." name="prefix" type="QString"/>
+    <Option value="Output features will contain two new fields: distance in meters and direction in degrees from the origin." name="qgis:executesql_1:Output" type="QString"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option value="Middlebury" name="model_group" type="QString"/>
+  <Option value="Direction and Distance MacOS" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="inputlayer" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="-1" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Input Layer" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="inputlayer" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="origin" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="-1" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Origin" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="origin" name="name" type="QString"/>
+      <Option value="source" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="prefix" type="Map">
+      <Option value="cbd" name="default" type="QString"/>
+      <Option value="Prefix" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="false" name="multiline" type="bool"/>
+      <Option value="prefix" name="name" type="QString"/>
+      <Option value="string" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="qgis:deletecolumn_1:Output" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="-1" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Output" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="qgis:deletecolumn_1:Output" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputlayer" type="Map">
+      <Option value="inputlayer" name="component_description" type="QString"/>
+      <Option value="187" name="component_pos_x" type="double"/>
+      <Option value="154" name="component_pos_y" type="double"/>
+      <Option value="inputlayer" name="name" type="QString"/>
+    </Option>
+    <Option name="origin" type="Map">
+      <Option value="origin" name="component_description" type="QString"/>
+      <Option value="200" name="component_pos_x" type="double"/>
+      <Option value="268" name="component_pos_y" type="double"/>
+      <Option value="origin" name="name" type="QString"/>
+    </Option>
+    <Option name="prefix" type="Map">
+      <Option value="prefix" name="component_description" type="QString"/>
+      <Option value="231" name="component_pos_x" type="double"/>
+      <Option value="61" name="component_pos_y" type="double"/>
+      <Option value="prefix" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>

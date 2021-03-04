@@ -1,0 +1,248 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="qgis:executesql_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:executesql"/>
+      <Option name="component_description" type="QString" value="Execute SQL"/>
+      <Option name="component_pos_x" type="double" value="694.6709310313272"/>
+      <Option name="component_pos_y" type="double" value="166.07814032368492"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:executesql_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="grouped" type="Map">
+          <Option name="child_id" type="QString" value="qgis:executesql_1"/>
+          <Option name="component_description" type="QString" value="grouped"/>
+          <Option name="component_pos_x" type="double" value="894.6709310313272"/>
+          <Option name="component_pos_y" type="double" value="211.07814032368492"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="grouped"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT_DATASOURCES" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="ainputs"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="INPUT_GEOMETRY_TYPE" type="List">
+          <Option type="Map">
+            <Option name="expression" type="QString" value="If( @dissolvegeometry, 0, 1)"/>
+            <Option name="source" type="int" value="3"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_QUERY" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="[%concat(&#xa;'Select count(*) as featCount',&#xa;if( array_length(@bgroupfields)>0, concat(', ', array_to_string(@bgroupfields)),''),&#xa;if(  @ecountvalues  AND array_length(@bsummaryfields)>0, ', ' + array_to_string(array_foreach( @bsummaryfields, concat( ' count(',@element,') as cnt',@element))), ''),&#xa;if(  @esum  AND array_length(@bsummaryfields)>0, ', ' + array_to_string(array_foreach( @bsummaryfields, concat( ' sum(',@element,') as sum',@element))), ''),&#xa;if(  @eaverage  AND array_length(@bsummaryfields)>0, ', ' + array_to_string(array_foreach( @bsummaryfields, concat( ' avg(',@element,') as avg',@element))), ''),&#xa;if( @minimum AND array_length(@bsummaryfields)>0, ', ' + array_to_string(array_foreach( @bsummaryfields, concat( ' min(',@element,') as min',@element))), ''),&#xa;if( @maximum AND array_length(@bsummaryfields)>0, ', ' + array_to_string(array_foreach( @bsummaryfields, concat( ' max(',@element,') as max',@element))), ''),&#xa;if( @dissolvegeometry,', CastToMulti(ST_Union(geometry)) as geometry',''),&#xa;' from input1',&#xa;if (array_length(@bgroupfields)>0, concat(' group by ', array_to_string(@bgroupfields)),''))&#xa;%]&#xa;"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_UID_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help" type="Map">
+    <Option name="ALG_CREATOR" type="QString" value="Joseph Holler"/>
+    <Option name="ALG_DESC" type="QString" value="Group features with common values in the group field(s). Optionally, dissolve geometries and calculate summary statistics for numeric fields. "/>
+    <Option name="ALG_HELP_CREATOR" type="QString" value="Joseph Holler"/>
+    <Option name="ALG_VERSION" type="QString" value="1.0"/>
+    <Option name="HELP_URL" type="QString" value="https://github.com/GIS4DEV/QGISmiddleburyAlgs"/>
+    <Option name="SHORT_DESCRIPTION" type="QString" value="Group features with identical values in group field(s), calculate summary statistics on numerical fields, and dissolve geometries."/>
+    <Option name="ainputfeatures" type="QString" value="Features to be grouped and summarized"/>
+    <Option name="ainputs" type="QString" value="Input layer with features to be dissolved."/>
+    <Option name="average" type="QString" value=""/>
+    <Option name="bgroupfields" type="QString" value="In which field(s) do you want to search for values with which to form the new groups? A new group will be formed for each combination of values in the group field(s).&#xa;If you do not select any group fields, the output will be a single feature.&#xa;Field names must be no longer than 10 characters."/>
+    <Option name="bsummaryfields" type="QString" value="Which numerical field(s) do you want to calculate summary statistics for?&#xa;Field names must be no longer than 10 characters."/>
+    <Option name="countfeatures" type="QString" value="Count of all features in each group"/>
+    <Option name="countvalues" type="QString" value="Count of all non-null values in each group"/>
+    <Option name="dissolvegeometry" type="QString" value="Do you want to dissolve the geometries (geographic data) associated with the features? Disjoint geometries are still dissolved into multi-part features.&#xa;If this option is unchecked, the output will be a table with no geographic data."/>
+    <Option name="eaverage" type="QString" value="Calculate the average or mean of your summary field(s)?"/>
+    <Option name="ecountvalues" type="QString" value="Count non-null values in your summary field(s)?"/>
+    <Option name="esum" type="QString" value="Calculate the sum of your summary field(s)?"/>
+    <Option name="gdal:convertformat_1:dissolved" type="QString" value="Save the output as a geopackage if you are not dissolving geometries.&#xa;&#xa;Save the output as an ESRI Shapefile or a Geopackage if you are dissolving geometries."/>
+    <Option name="gdal:executesql_1:sqlOutput" type="QString" value="The output should be a new geopackage file. The file will not necessarily load into QGIS automatically: search for it in the Browser and add it manually after running this algorithm."/>
+    <Option name="groupfields" type="QString" value="Which field or fields do you want to use to group the features? Features with identical values in the group field(s) will be grouped into a single feature.&#xa;Field names should follow shapefile conventions: i.e. no more than 10 characters each"/>
+    <Option name="inputfeatures" type="QString" value="Features to be grouped and summarized"/>
+    <Option name="maximum" type="QString" value="Calculate the maximum of your summary field(s)?"/>
+    <Option name="minimum" type="QString" value="Calculate the minimum of your summary field(s)?"/>
+    <Option name="qgis:executesql_1:grouped" type="QString" value="Grouped output. If you are not dissolving geometries, then save the output as a .csv .xlsx or database table."/>
+    <Option name="sum" type="QString" value=""/>
+    <Option name="sumfields" type="QString" value="For which field(s) do you want to calculate summary statistics?&#xa;Field names should follow shapefile conventions: i.e. no more than 10 characters each"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option name="model_group" type="QString" value="Middlebury"/>
+  <Option name="model_name" type="QString" value="GroupBy MacOS"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="ainputs" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="-1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="a Inputs"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="ainputs"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="bgroupfields" type="Map">
+      <Option name="allow_multiple" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="b Group Fields"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="bgroupfields"/>
+      <Option name="parameter_type" type="QString" value="field"/>
+      <Option name="parent_layer" type="QString" value="ainputs"/>
+    </Option>
+    <Option name="bsummaryfields" type="Map">
+      <Option name="allow_multiple" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="0"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="b Summary Fields"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="bsummaryfields"/>
+      <Option name="parameter_type" type="QString" value="field"/>
+      <Option name="parent_layer" type="QString" value="ainputs"/>
+    </Option>
+    <Option name="dissolvegeometry" type="Map">
+      <Option name="default" type="bool" value="true"/>
+      <Option name="description" type="QString" value="Dissolve Geometry"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="dissolvegeometry"/>
+      <Option name="parameter_type" type="QString" value="boolean"/>
+    </Option>
+    <Option name="eaverage" type="Map">
+      <Option name="default" type="bool" value="false"/>
+      <Option name="description" type="QString" value="e Average"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="eaverage"/>
+      <Option name="parameter_type" type="QString" value="boolean"/>
+    </Option>
+    <Option name="ecountvalues" type="Map">
+      <Option name="default" type="bool" value="false"/>
+      <Option name="description" type="QString" value="e Count Values"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="ecountvalues"/>
+      <Option name="parameter_type" type="QString" value="boolean"/>
+    </Option>
+    <Option name="esum" type="Map">
+      <Option name="default" type="bool" value="false"/>
+      <Option name="description" type="QString" value="e Sum"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="esum"/>
+      <Option name="parameter_type" type="QString" value="boolean"/>
+    </Option>
+    <Option name="maximum" type="Map">
+      <Option name="default" type="bool" value="false"/>
+      <Option name="description" type="QString" value="Maximum"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="maximum"/>
+      <Option name="parameter_type" type="QString" value="boolean"/>
+    </Option>
+    <Option name="minimum" type="Map">
+      <Option name="default" type="bool" value="false"/>
+      <Option name="description" type="QString" value="Minimum"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="minimum"/>
+      <Option name="parameter_type" type="QString" value="boolean"/>
+    </Option>
+    <Option name="qgis:executesql_1:grouped" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="grouped"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="qgis:executesql_1:grouped"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="ainputs" type="Map">
+      <Option name="component_description" type="QString" value="ainputs"/>
+      <Option name="component_pos_x" type="double" value="655"/>
+      <Option name="component_pos_y" type="double" value="39"/>
+      <Option name="name" type="QString" value="ainputs"/>
+    </Option>
+    <Option name="bgroupfields" type="Map">
+      <Option name="component_description" type="QString" value="bgroupfields"/>
+      <Option name="component_pos_x" type="double" value="406.4620334620335"/>
+      <Option name="component_pos_y" type="double" value="85.67258687258686"/>
+      <Option name="name" type="QString" value="bgroupfields"/>
+    </Option>
+    <Option name="bsummaryfields" type="Map">
+      <Option name="component_description" type="QString" value="bsummaryfields"/>
+      <Option name="component_pos_x" type="double" value="410.0041184041184"/>
+      <Option name="component_pos_y" type="double" value="138.85122265122254"/>
+      <Option name="name" type="QString" value="bsummaryfields"/>
+    </Option>
+    <Option name="dissolvegeometry" type="Map">
+      <Option name="component_description" type="QString" value="dissolvegeometry"/>
+      <Option name="component_pos_x" type="double" value="410.6241956241957"/>
+      <Option name="component_pos_y" type="double" value="189.5606177606178"/>
+      <Option name="name" type="QString" value="dissolvegeometry"/>
+    </Option>
+    <Option name="eaverage" type="Map">
+      <Option name="component_description" type="QString" value="eaverage"/>
+      <Option name="component_pos_x" type="double" value="407.9835263835264"/>
+      <Option name="component_pos_y" type="double" value="255.9302445302444"/>
+      <Option name="name" type="QString" value="eaverage"/>
+    </Option>
+    <Option name="ecountvalues" type="Map">
+      <Option name="component_description" type="QString" value="ecountvalues"/>
+      <Option name="component_pos_x" type="double" value="413.34594594594597"/>
+      <Option name="component_pos_y" type="double" value="317.2731016731016"/>
+      <Option name="name" type="QString" value="ecountvalues"/>
+    </Option>
+    <Option name="esum" type="Map">
+      <Option name="component_description" type="QString" value="esum"/>
+      <Option name="component_pos_x" type="double" value="414.536936936937"/>
+      <Option name="component_pos_y" type="double" value="368.83577863577875"/>
+      <Option name="name" type="QString" value="esum"/>
+    </Option>
+    <Option name="maximum" type="Map">
+      <Option name="component_description" type="QString" value="maximum"/>
+      <Option name="component_pos_x" type="double" value="414.18069498069497"/>
+      <Option name="component_pos_y" type="double" value="418.19716859716857"/>
+      <Option name="name" type="QString" value="maximum"/>
+    </Option>
+    <Option name="minimum" type="Map">
+      <Option name="component_description" type="QString" value="minimum"/>
+      <Option name="component_pos_x" type="double" value="423.49396605066727"/>
+      <Option name="component_pos_y" type="double" value="478.0565520668614"/>
+      <Option name="name" type="QString" value="minimum"/>
+    </Option>
+  </Option>
+</Option>
